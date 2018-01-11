@@ -1,0 +1,881 @@
+@font-face
+{
+	font-family: Walkway;
+	src: url("walkway_black.ttf");
+}
+@font-face
+{
+    font-family: StarWars;
+    src: url("Starjedi.ttf");
+}
+html
+{
+	font-size: 1em;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	background-color: #e8e8e8;
+}
+#SWBody
+{
+	background-color: #010316;
+}
+header
+{
+	margin: 0;
+	padding:0;
+	border:0;
+	border-bottom: 3px;
+	border-bottom-color: black;
+	border-style: solid;
+	background-color: #f56c2c;
+	min-height: 60px;
+    width: 100vw;
+    height: auto;
+	overflow: hidden;
+    text-align: center;
+}
+#logo
+{
+    position: relative;
+	height: 40px;
+	float: left;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: 3vw;
+}
+.nav
+{
+    position: absolute;
+	float: right;
+	width:300px;
+	height: 30px;
+	border: 4px;
+	border-color: black;
+	border-style: solid;
+	padding: 0;
+	margin-top: 11;
+	margin-left: 50vw;
+	transform: translate(-50%,0);
+	text-align: center;
+}
+.nav ul
+{
+	padding: 0;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	list-style: none;	
+}
+.nav ul li
+{
+	display: inline-block;
+}
+.nav ul li a
+{
+	padding: 5px;
+	color: black;
+	text-decoration: none;
+	font-family: Walkway;
+}
+.nav ul li a:hover
+{
+	color: white;
+}
+#Cart
+{
+    height: 40px;
+    float: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 3vw;
+}
+.title h1
+{
+	font-size: 3em;
+	font-family: Walkway;
+	text-align: center;
+    width: 100vw;
+}
+.title h2
+{
+    font-size: 2em;
+    font-family: Walkway;
+    text-align: center;
+    margin-top: 0;
+    width: 100vw;
+}
+.bx-wrapper
+{
+	width: 1200;
+	background-color: #e8e8e8;
+	border: none;
+	float:left;
+	margin-left: 50vw;
+	transform: translate(-50%,0);
+}
+.flex-container
+{
+	background-color: white;
+	display: flex;
+	flex-direction: row;
+	flex-flow: row wrap;
+	padding: 0;
+	padding-top: 5px;
+	margin: 0;
+	margin-top: 20px;
+	list-style: none;
+	height: auto;
+	width: 100vw;
+	border-top: 4px;
+	border-top-style: solid;
+}
+.flex-item
+{
+	top: 5%;
+	width: 24vw;
+	background-color: white;
+	text-align: center;
+	border: 2px;
+	border-style: solid;
+	min-width: 320px;
+	margin-right: 5px;
+}
+#LogoSec
+{
+	margin-left: 0.5vw;
+}
+#LogoSec img
+{
+	height:50px;
+}
+footer h1
+{
+	text-align: center;
+	width: 24vw;
+	min-width: 320px;
+	font-size: 2.5em;
+}
+.flex-container ul
+{
+	padding: 0;
+	margin-top: 5px;
+	list-style: none;
+	min-width:300px;
+}
+.flex-container ul li
+{
+	padding: 5px;
+	text-decoration: none;
+	width: 24vw;
+	min-width: 300px;
+}
+.flex-container ul li a
+{
+	color: black;
+	font-size: 2em;
+	width: 24vw;
+	min-width: 300px;
+}
+.flex-container ul li a:hover
+{
+	color: #f56c2c;
+}
+#map
+{
+    height: 200px;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.ContImg
+{
+	height: 70px;
+	margin-right: 5px;
+    margin-bottom: 10px;
+}
+.Underline
+{
+	text-decoration: underline;
+}
+.Center
+{
+    float:left;
+	margin-left: 50vw;
+	transform: translate(-50%,0);
+}
+.SWSec
+{
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-top: 4px;
+    border-top-style: solid;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-color: #870202;
+    margin-bottom: 5px;
+}
+#Propaganda
+{
+    height: 550px;
+    width: 100%;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-color: #870202;
+    margin-bottom: 5px;
+}
+#Poster
+{
+    width: 950px;
+    margin-top: 7px;
+}
+.SWH1
+{
+    font-family: StarWars;
+    color: white;
+}
+#TitleSec
+{
+    height:630px;
+    width: 100%;
+}
+#SWTitle
+{
+    margin-bottom: 10px;
+    width: 40%;
+    min-width: 320px;
+}
+#SWVideo
+{
+    width: 853px; 
+    height: 505px;
+}
+#Campaign
+{
+    width: 100vw;
+    padding-top: 30px;
+    height: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.CampDiv
+{
+    position:relative;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    min-width: 320px;
+}
+.CampDiv h1
+{
+    width: 100%;
+    margin: 0;
+    min-width: 320px;
+    text-align: center;
+}
+.CampDiv p
+{
+    width: 100%;
+    margin: 0;
+    margin-top: 5px;
+    min-width: 320;
+    font-family: StarWars;
+    color: white;
+    text-align: right;
+}
+.CampDiv img
+{
+    display:block;
+    width: 60%;
+    height: auto;
+    min-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Iden
+{
+    float: right;
+}
+#Multi h1
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#MultiFlex
+{
+    width: 100vw;
+    height: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.MultiFlexImg
+{
+    width: 25vw;
+    min-width: 200px;
+    height: auto;
+    position: relative;
+}
+#Droid
+{
+    width: 95%;
+    height: auto;
+
+}
+#Clone
+{
+    width: 95%;
+    height: auto;
+    float: right;
+
+}
+#MultiFlexText
+{
+    position:relative;
+    width: 50vw;
+    min-width: 320px;
+
+}
+#MultiFlexText p
+{
+    width: 100%;
+    margin: 0;
+    margin-top: 10px;
+    min-width: 320;
+    font-family: StarWars;
+    color: white;
+    text-align: center;
+}
+#TShirtTitle
+{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    margin: 0;
+}
+#TShirtImg
+{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+}
+#TShirt
+{
+    width: 320px;
+    height: auto;
+    margin-top: 10px;
+}
+#TShirtButtons
+{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+}
+#TShirtBuyButtons
+{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+}
+#SWFinal
+{
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+#SWMedia
+{
+    position: relative;
+    width: 49%;
+    height: auto;
+    border-right: 4px;
+    border-right-style: solid;
+    border-right-color: #870202;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+}
+#SWMediaTitle
+{
+    margin: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    width: 100%;
+}
+#SWBuy
+{
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    min-width: 320px;
+    float: right;
+}
+.SWButton
+{
+    width: 200px;
+    height: auto;
+    text-decoration: none;
+    font-family: StarWars;
+    padding: 2px;
+	border: 4px;
+	border-style: solid;
+	border-color:#870202;
+    background-color: white;
+	cursor: pointer;
+    font-size: 2em;
+    margin-top: 45px;
+    margin-bottom: 10px;
+}
+.SWButton:hover
+{
+    color: #f56c2c;
+    border-color:#870202;
+}
+.BuySecButton
+{
+    width:100px;
+    height: auto;
+    font-size: 1.5em;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+.BuySecButton:hover
+{
+    color: #f56c2c;
+    border-color:#870202;
+}
+.flex-container-Pop
+{
+    width: 100vw;
+    height: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 20px;
+    text-align: center;
+}
+.flex-item-Pop
+{
+    position:relative;
+    height: 310px;
+    width: 50vw;
+    min-width: 320px;
+}
+.flex-item-Pop a
+{
+    height:300px;
+    width: 241px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-item-Pop img
+{
+    height:300px;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    transition: .3s;
+}
+.flex-item-Pop h2
+{
+    color: white;
+    width: 241px;
+    position: absolute;
+    top:30%;
+    z-index: 1;
+    opacity: 0;
+    transition: .3s;
+}
+.flex-item-Pop :hover img 
+{
+    filter: blur(3px) brightness(50%);
+}
+.flex-item-Pop :hover h2
+{
+    opacity: 1;
+}
+#games
+{
+	padding-top: 20px;
+	border-top: 3px;
+	border-top-color: black;
+	border-top-style: solid;
+}
+.flex-container-G
+{
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding: 0;
+	margin: 0;
+}
+.flex-item-G
+{
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
+	border: 5px;
+	border-style: solid;
+	border-color: black;
+	width: 70%;
+	min-width: 300px;
+	height: 50px;
+}
+.GameTitle
+{
+	position: relative;
+	width: 200px;
+	margin: 0px;
+    margin-top: 13px;
+	margin-left: 20px;
+	padding: 0;
+	font-family: Walkway;
+}
+.Price
+{
+	position: relative;
+	float: right;
+	margin: 0;
+	margin-right: 10px;
+	bottom: 50%;
+	font-family: Walkway;
+}
+.GButton
+{
+	position: relative;
+	float: right;
+	bottom: 50%;
+	margin-right: 5px;
+	text-decoration: none;
+	font-family: Walkway;
+}
+.button
+{
+	height: auto;
+	width: auto;
+	padding: 3px;
+	border: 2px;
+	border-style: solid;
+	color: black;
+	background-color: #f56c2c;
+	cursor: pointer;
+	font-size: 0.9em;
+}
+.button:hover
+{
+	border-color: black;
+	color: white;
+	box-shadow: black;
+}
+#AUH1
+{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    font-family: Walkway
+}
+.AUTop
+{
+    width: 100vw;
+    height: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+    text-align: center;
+    border-bottom: 4px;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+}
+#AULogoDiv
+{
+    width: 30%;
+    height: auto;
+    position:relative;
+    min-width: 320px;
+}
+#AUTextDiv
+{
+    width: 69%;
+    height: auto;
+    position:relative;
+    min-width: 320px;
+    text-align: left;
+}
+.AUTop p
+{
+    font-family: Walkway;
+    font-size: 1.35em;
+}
+.AULogo
+{
+    height: 80px;
+    width: auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 5px;
+}
+.SmallImg
+{
+    height: 100px;
+}
+.AUBottom
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.AUMapDiv
+{
+    width: 50%;
+    height: auto;
+    position:relative;
+    min-width: 320px;
+
+}
+.AUStudioDiv
+{
+    width: 50%;
+    height: auto;
+    position:relative;
+    min-width: 320px;
+}
+.AUStudopDiv li
+{
+    margin-bottom: 5px;
+}
+.AUStudioDiv a
+{
+    width: 100%;
+    height: auto;
+    color: black;
+    font-family: Walkway;
+    font-size: 2em;
+}
+.AUStudioDiv a:hover
+{
+    color: #f56c2c;
+}
+#AUMap
+{
+    height: 300px;
+    width: 320px;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+
+
+.cart
+{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-family: Walkway;
+}
+.cart h1
+{
+    font-size: 2em;
+}
+.Total
+{
+    margin:0;
+    text-align:center;
+    padding-right:20px;
+    margin-top: 10px;
+    font-family: Walkway;
+}
+#TableHolder
+{
+    width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: lightblue;
+}
+.priceHolder
+{	
+    bottom: 20px;
+    background-color: #333;
+    padding: 5px;
+    left: 50%;
+}
+#CartContent
+{
+    width: 300px;
+    height: auto;
+    font-family: Walkway;
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 1350px)
+{
+    .flex-item{
+        margin-bottom: 5px;
+    }
+    #LogoSec{
+        margin-left: 0;
+    }
+    
+}
+@media only screen and (max-width: 1200px)
+{
+    .bx-wrapper{
+        width: 750px;
+    }
+}
+@media only screen and (max-width: 1000px)
+{
+    #Propaganda{
+        height: 440px;
+    }
+    #Poster{
+        width: 750px;
+    }
+    #AULogoDiv{
+        width: 100%;
+    }
+    #AUTextDiv{
+        width: 98%;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 888px)
+{
+    #Logo{
+        margin-left: 50vw;
+        margin-bottom: 0;
+	    transform: translate(-50%,0);
+    }
+    .nav{
+        margin-top: 5;
+        margin-bottom: 2;
+        position: relative;
+        margin-right: 50vw;
+	    transform: translate(50%,0);
+    }
+    #TitleSec{
+        height: 400px;
+    }
+    #SWVideo{
+        width: 560px;
+        height: 315px;
+    }
+    #Cart
+    {
+        margin-right: 50vw;
+	    transform: translate(50%,0);
+    }
+}
+@media only screen and (max-width: 768px) 
+{
+    .bx-wrapper{
+        width: 450px;
+    }
+    .flex-item-G{
+        height: 70px;
+    }
+    .Price{
+        bottom: 0;
+    }
+    .GButton{
+        bottom:0;
+    }
+    #Propaganda{
+        height: 360px;
+    }
+    #Poster
+    {
+        width: 600px;
+    }
+    .AUMapDiv{
+        width: 100%;
+    }
+    .AUStudioDiv{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 640px)
+{
+    .flex-item{
+        width: 100%;
+    }
+    .flex-item h1{
+        width: 100%
+    }
+    .flex-item ul{
+        width: 100%;
+    }
+    .flex-item li{
+        width: 100%;
+    }
+    .flex-item a{
+        width: 100%;
+    }
+    .CampDiv p{
+        text-align: center;
+    }
+    #SWMedia{
+        border: 0;
+    }
+    .flex-item-Pop{
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 610px)
+{
+    #TitleSec{
+        height: 280px;
+    }
+    #SWVideo{
+        width: 320px;
+        height: 200px;
+    }
+    #Propaganda{
+        height: 280px;
+    }
+    #Poster{
+        width: 460px;
+    }
+}
+@media only screen and (max-width: 480px)
+{
+    .bx-wrapper{
+        width: 310px;
+    }
+        #Propaganda{
+        height: 200px;
+    }
+        #Poster{
+        width: 320px;
+    }
+    .MultiFlexImg{
+        min-width: 320px;
+    }
+    #AUMAP{
+        margin-left: 0;
+    }
+}

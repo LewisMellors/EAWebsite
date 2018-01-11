@@ -1,0 +1,212 @@
+<html>
+    <head>
+        
+        <title>Cart</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+			
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>	
+        <script type="text/javascript" src="js/js.js"></script>  
+		
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBG1qagY9tQ1fIBJpsIw-4M9Jl7C0kpiIw&callback=initMap"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+			<a href="index.html">
+				<img id="logo" src="assets/Logo/EA_logo.png" /img>
+			</a>
+			
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="Games.html" >GAMES</a>
+						<a href="Media.html" >MEDIA</a>
+						<a href="https://www.ea.com/news" >NEWS</a>
+						<a href="AboutUs.html" >ABOUT US</a>
+					</li>
+				</ul>
+			</nav>
+            
+            <a href="Cart.html">
+                <img src="assets/Cart.jpg" id="Cart" /img>
+            </a>
+		</header>
+			
+        
+        
+        <section class="Cart">
+		  <h1 class="UnderLine">Cart</h1>
+		  
+            <div id="TableHolder">
+                
+		      <table id="cartcontent" fitColumns="true">
+			     <thead>
+				    <tr>
+					   <th class="Underline" id="name" width=140>Name</th>
+					   <th class="Underline" id="quantity" width=60 align="right">Quantity</th>
+					   <th class="Underline" id="price" width=60 align="right">Price</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>StarWars</th>
+					   <th id="SWQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;54.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>Battlefield 1</th>
+					   <th id="BFQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;54.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>Sims 4</th>
+					   <th id="SimQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;34.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>NFS: Payback</th>
+					   <th id="NFSQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;54.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>ME: Andromeda</th>
+					   <th id="MEQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;34.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>Unravel</th>
+					   <th id="UQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;17.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>T-shirt S</th>
+					   <th id="SQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;15.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>T-shirt M</th>
+					   <th id="MQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;15.99</th>
+				    </tr>
+                    <tr>
+					   <th id="name" width=140>T-shirt L</th>
+					   <th id="LQuantity" width=60 align="right">0</th>
+					   <th id="price" width=60 align="right">&pound;15.99</th>
+				    </tr>
+			     </thead>
+		      </table>
+            </div>
+		  <p id="Total">Total: &pound;0</p>
+            <button onclick="Clear()">Clear</button>
+	   </section>
+        
+        
+        
+        
+        
+        
+        
+		
+		<footer>	
+			<div class="flex-container">
+				<div class="flex-item" id="LogoSec">
+					<h1>EAtm</h1>
+					<img id="EaFootLogo" src="assets/Logo/EA_logo.png">
+					<h1 id="OriTM">Origin tm</h1>
+					<img id="OriFoot" src="assets/Logo/Origin_logo.png">
+				</div>	
+				
+				<div class="flex-item" id="LinkSec">
+					<ul>
+					<li>
+						<a href="AboutUs.html">ABOUT US</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://www.ea.com/legal">LEGAL</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://tos.ea.com/legalapp/WEBPRIVACY/GB/en/PC/">COOKIES & PRIVACY</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://help.ea.com/en/">HELP</a>
+					</li>
+				</ul>
+				<h2>Electronic Arts 2017/18</h2>
+				</div>
+				
+				<div class="flex-item" id="MapSec">
+					<h1>Where's EA?</h1>
+					<div id="map">
+					</div>
+				</div>
+				
+				
+				<div class="flex-item" id="ContactSec">
+					<h1 class="Underline">Contact Us</h1>
+					<a href="https://www.facebook.com/ea.uk/?brand_redir=68678914189">
+						<img src="assets/Logo/FB.png" class="ContImg" /img></a>
+					<a href="https://twitter.com/ea?lang=en">
+						<img src="assets/Logo/Twitter.jpg" class="ContImg" /img></a>
+					<a href="https://www.instagram.com/ea/?hl=en">
+						<img src="assets/Logo/Insta.jpg" class="ContImg" /img></a>
+					<a href="https://www.youtube.com/user/EA">
+						<img src="assets/Logo/Youtube.png" class="ContImg" /img></a>
+				</div>
+				
+			</div>	
+		</footer>		
+    </body>    
+    
+    <script>
+      function initMap() {
+          
+        var Head = {lat: 37.5231564, lng: -122.255721};
+          
+        var map =  new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: Head
+        });
+          var marker = new google.maps.Marker({
+          position: Head,
+          map: map
+        });
+      }
+        
+        
+        document.getElementById("SWQuantity").innerHTML = sessionStorage.getItem("SWQuan");
+        document.getElementById("BFQuantity").innerHTML = sessionStorage.getItem("BFQuan");
+        document.getElementById("SimQuantity").innerHTML = sessionStorage.getItem("SimQuan");
+        document.getElementById("NFSQuantity").innerHTML = sessionStorage.getItem("NFSQuan");
+        document.getElementById("MEQuantity").innerHTML = sessionStorage.getItem("MEQuan");
+        document.getElementById("UQuantity").innerHTML = sessionStorage.getItem("UQuan");
+        document.getElementById("SQuantity").innerHTML = sessionStorage.getItem("SQuan");
+        document.getElementById("MQuantity").innerHTML = sessionStorage.getItem("MQuan");
+        document.getElementById("LQuantity").innerHTML = sessionStorage.getItem("LQuan");
+        
+        var SWP = parseInt(sessionStorage.getItem("SWQuan")) * 54.99;
+        var BFP = parseInt(sessionStorage.getItem("BFQuan")) * 54.99;
+        var SimP = parseInt(sessionStorage.getItem("SimQuan")) * 34.99;
+        var NFSP = parseInt(sessionStorage.getItem("NFSQuan")) * 54.99;
+        var MEP = parseInt(sessionStorage.getItem("MEQuan")) * 34.99;
+        var UP = parseInt(sessionStorage.getItem("UQuan")) * 17.99;
+        var SP = parseInt(sessionStorage.getItem("SQuan")) * 15.99;
+        var MP = parseInt(sessionStorage.getItem("MQuan")) * 15.99;
+        var LP = parseInt(sessionStorage.getItem("LQuan")) * 15.99;
+
+        var Total = SWP + BFP + SimP + NFSP + MEP + UP + SP + MP + LP;
+        var RealTotal = Total.toFixed(2);
+
+        document.getElementById("Total").innerHTML = "Total: &pound;" + RealTotal;
+    </script>
+</html>

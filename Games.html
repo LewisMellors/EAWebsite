@@ -1,0 +1,173 @@
+<html>
+    <head>
+        
+        <title>Games</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+			
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>	
+        <script type="text/javascript" src="js/js.js"></script>  
+		
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32Ep9_5laqTgzpLhOKjZ0hQEUhWHdyn0&callback=initMap"></script>
+        
+    </head>
+	<body>
+		<header>
+			<a href="index.html">
+				<img id="logo" src="assets/Logo/EA_logo.png" /img>
+			</a>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="Games.html" >GAMES</a>
+						<a href="Media.html" >MEDIA</a>
+						<a href="https://www.ea.com/news" >NEWS</a>
+						<a href="AboutUs.html" >ABOUT US</a>
+					</li>
+				</ul>
+			</nav>
+            <a href="Cart.html">
+                <img src="assets/Cart.jpg" id="Cart" /img>
+            </a>
+        </header>
+		<section id="popular">
+        	<div class="title">
+            	<h1 class="center Underline">EA's Games</h1>
+            	<h2 class="center underline">What's Hot</h2>
+        	</div>
+		
+        	<section class="flex-container-Pop">
+            	<div class="flex-item-Pop">
+                	<a href="SW.html">
+                    	<img src="assets/SWBF2Cover.jpg" /img>
+                    	<h2>Join Inferno Squad or your friends in Star Wars: BattleFront II</h2>
+                	</a>
+				</div>
+            	<div class="flex-item-Pop">
+					<a href="https://www.easports.com/fifa">
+                    	<img src="assets/FIFA18Cover.jpg" /img>
+                    	<h2>Make your own team in FUT with Fifa 18</h2>
+                	</a>
+            	</div>
+        	</section>
+		</section>
+		
+        <section id="Games">
+        	<div class="title">
+            	<h2 class="center Underline">Games</h2>
+        	</div>
+			
+			<div class="flex-container-G">
+				<div class="flex-item-G">
+					<h2  class="GameTitle">BATTLEFIELD 1</h2>
+					<h2 class ="Price">Price: &pound;54.99</h2>
+					<button onclick="AddBFQ()" class="button GButton">BUY</button>
+					<a href="https://www.battlefield.com/en-gb" class="button GButton">WEB PAGE</a>
+				</div>
+				<div class="flex-item-G">
+					<h2  class="GameTitle">SIMS 4</h2>
+					<h2 class ="Price">Price: &pound;34.99</h2>
+					<button onclick="AddSimQ()" class="button GButton">BUY</button>
+					<a href="https://www.ea.com/en-gb/games/the-sims/the-sims-4" class="button GButton">WEB PAGE</a>
+				</div>
+				<div class="flex-item-G">
+					<h2  class="GameTitle">NFS: PAYBACK</h2>
+					<h2 class ="Price">Price: &pound;54.99</h2>
+					<button onclick="AddNFSQ()" class="button GButton">BUY</button>
+					<a href="https://www.ea.com/en-gb/games/need-for-speed/need-for-speed-payback" class="button GButton">WEB PAGE</a>
+				</div>
+				<div class="flex-item-G">
+					<h2  class="GameTitle">ME: ANDROMEDA</h2>
+					<h2 class ="Price">Price: &pound;34.99</h2>
+					<button onclick="AddMEQ()" class="button GButton">BUY</button>
+					<a href="https://www.masseffect.com/" class="button GButton">WEB PAGE</a>
+				</div>
+				<div class="flex-item-G">
+					<h2  class="GameTitle">UNRAVEL</h2>
+					<h2 class ="Price">Price: &pound;17.99</h2>
+					<button onclick="AddUQ()" class="button GButton">BUY</button>
+					<a href="https://www.ea.com/en-gb/games/unravel" class="button GButton">WEB PAGE</a>
+				</div>
+			</div>
+			
+		</section>
+		
+		<footer>
+			
+			<div class="flex-container">
+				
+				<div class="flex-item" id="LogoSec">
+					<h1>EAtm</h1>
+					<img id="EaFootLogo" src="assets/Logo/EA_logo.png">
+					<h1 id="OriTM">Origin tm</h1>
+					<img id="OriFoot" src="assets/Logo/Origin_logo.png">
+				</div>	
+				
+				<div class="flex-item" id="LinkSec">
+					<ul>
+					<li>
+						<a href="AboutUs.html">ABOUT US</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://www.ea.com/legal">LEGAL</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://tos.ea.com/legalapp/WEBPRIVACY/GB/en/PC/">COOKIES & PRIVACY</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://help.ea.com/en/">HELP</a>
+					</li>
+				</ul>
+				<h2>Electronic Arts 2017/18</h2>
+				</div>
+				
+				<div class="flex-item" id="MapSec">
+					<h1>Where's EA?</h1>
+					<div id="map">
+					</div>
+				</div>
+				
+				
+				<div class="flex-item" id="ContactSec">
+					<h1 class="Underline">Contact Us</h1>
+					<a href="https://www.facebook.com/ea.uk/?brand_redir=68678914189">
+						<img src="assets/Logo/FB.png" class="ContImg" /img></a>
+					<a href="https://twitter.com/ea?lang=en">
+						<img src="assets/Logo/Twitter.jpg" class="ContImg" /img></a>
+					<a href="https://www.instagram.com/ea/?hl=en">
+						<img src="assets/Logo/Insta.jpg" class="ContImg" /img></a>
+					<a href="https://www.youtube.com/user/EA">
+						<img src="assets/Logo/Youtube.png" class="ContImg" /img></a>
+				</div>
+			</div>	
+		</footer>	
+	</body>
+    
+    <script>
+      function initMap() {
+          
+        var Head = {lat: 37.5231564, lng: -122.255721};
+          
+        var map =  new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: Head
+        });
+          var marker = new google.maps.Marker({
+          position: Head,
+          map: map
+        });
+      }
+    </script>
+</html>

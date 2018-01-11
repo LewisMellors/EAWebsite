@@ -1,0 +1,151 @@
+<html>
+    <head>
+        
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+			
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>	
+        <script type="text/javascript" src="js/js.js"></script>  
+		
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32Ep9_5laqTgzpLhOKjZ0hQEUhWHdyn0&callback=initMap"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+			<a href="index.html">
+				<img id="logo" src="assets/Logo/EA_logo.png" /img>
+			</a>
+			
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="Games.html" >GAMES</a>
+						<a href="Media.html" >MEDIA</a>
+						<a href="https://www.ea.com/news" >NEWS</a>
+						<a href="AboutUs.html" >ABOUT US</a>
+					</li>
+				</ul>
+			</nav>
+            
+            <a href="Cart.html">
+                <img src="assets/Cart.jpg" id="Cart" /img>
+            </a>
+		</header>
+			
+		<div class="title" id="Center">
+			<h1>Welcome to EA...</h1>
+		</div>
+		
+		
+		<div class="bxslider center">
+			<div><a href="SW.html">
+				<img src="assets/BF2-FP.png" title="JOIN THE FIGHT FOR THE GALAXY IN BATTLEFRONT 2"></a>
+			</div>
+			<div><a href="https://www.easports.com/fifa">
+				<img src="assets/Fifa18.jpg" title="BECOME THE BEST IN THE WORLD WITH FIFA 18"></a>
+			</div>
+			<div><a href="https://www.origin.com/gbr/en-us/store">
+				<img src="assets/OriginFP.jpg" title="FIND ALL THE GAMES IN THE ORIGIN STORE"></a>
+			</div>
+				
+		</div>
+		
+		<footer>	
+			<div class="flex-container">
+				<div class="flex-item" id="LogoSec">
+					<h1>EAtm</h1>
+					<img id="EaFootLogo" src="assets/Logo/EA_logo.png">
+					<h1 id="OriTM">Origin tm</h1>
+					<img id="OriFoot" src="assets/Logo/Origin_logo.png">
+				</div>	
+				
+				<div class="flex-item" id="LinkSec">
+					<ul>
+					<li>
+						<a href="AboutUs.html">ABOUT US</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://www.ea.com/legal">LEGAL</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://tos.ea.com/legalapp/WEBPRIVACY/GB/en/PC/">COOKIES & PRIVACY</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://help.ea.com/en/">HELP</a>
+					</li>
+				</ul>
+				<h2>Electronic Arts 2017/18</h2>
+				</div>
+				
+				<div class="flex-item" id="MapSec">
+					<h1>Where's EA?</h1>
+					<div id="map">
+					</div>
+				</div>
+				
+				
+				<div class="flex-item" id="ContactSec">
+					<h1 class="Underline">Contact Us</h1>
+					<a href="https://www.facebook.com/ea.uk/?brand_redir=68678914189">
+						<img src="assets/Logo/FB.png" class="ContImg" /img></a>
+					<a href="https://twitter.com/ea?lang=en">
+						<img src="assets/Logo/Twitter.jpg" class="ContImg" /img></a>
+					<a href="https://www.instagram.com/ea/?hl=en">
+						<img src="assets/Logo/Insta.jpg" class="ContImg" /img></a>
+					<a href="https://www.youtube.com/user/EA">
+						<img src="assets/Logo/Youtube.png" class="ContImg" /img></a>
+				</div>
+				
+			</div>	
+		</footer>		
+    </body>
+    
+    <script>
+      function initMap() {
+          
+        var Head = {lat: 37.5231564, lng: -122.255721};
+          
+        var map =  new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: Head
+        });
+          var marker = new google.maps.Marker({
+          position: Head,
+          map: map
+        });
+      }
+        
+        
+        
+        
+        if (sessionStorage.getItem("SessionInitiated") != "Yes")
+        {
+            console.log("NewSession");
+            sessionStorage.setItem("SWQuan","0");
+            sessionStorage.setItem("BFQuan","0");
+            sessionStorage.setItem("SimQuan","0");
+            sessionStorage.setItem("NFSQuan","0");
+            sessionStorage.setItem("MEQuan","0");
+            sessionStorage.setItem("UQuan","0");
+            sessionStorage.setItem("SQuan","0");
+            sessionStorage.setItem("MQuan","0");
+            sessionStorage.setItem("LQuan","0");
+        }
+
+        sessionStorage.setItem("SessionInitiated","Yes");
+    </script>
+</html>

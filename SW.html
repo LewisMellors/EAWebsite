@@ -1,0 +1,175 @@
+<html>
+    <head>
+        
+        <title>StarWars</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+        
+        <script type="text/javascript" src="js/js.js"></script> 
+        
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+			
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>	
+        
+        <script type="text/javascript" src="js/js.js"></script>    
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32Ep9_5laqTgzpLhOKjZ0hQEUhWHdyn0&callback=initMap"></script>
+        
+    </head>
+	<body id="SWBody">
+		<header>
+			<a href="index.html">
+				<img id="logo" src="assets/Logo/EA_logo.png" /img>
+			</a>
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="Games.html" >GAMES</a>
+						<a href="Media.html" >MEDIA</a>
+						<a href="https://www.ea.com/news" >NEWS</a>
+						<a href="AboutUs.html" >ABOUT US</a>
+					</li>
+				</ul>
+			</nav>
+            <a href="Cart.html">
+                <img src="assets/Cart.jpg" id="Cart" /img>
+            </a>
+		</header>
+		
+        <section id="Propaganda">
+            <img src="assets/StarWars/DSPropaganda2.jpg" class="Center" id="Poster" /img>
+        </section>
+		
+        <section class="SWSec" id="TitleSec">
+            <img src="assets/StarWars/SWBF2Title.jpg" /img class="Center" id="SWTitle">
+            <iframe  src="https://www.youtube.com/embed/_q51LZ2HpbE" frameborder="0" allow="encrypted-media" allowfullscreen class="Center" id="SWVideo"></iframe>
+        </section>
+        
+        <section class="SWSec" id="Campaign">
+            <div class="CampDiv" id="CampText">
+                <h1 class="Underline SWH1">Campaign</h1>
+                <p>the empire's extraordinary special operations team inferno squad completes the missions no one else can. equally skilled as soldiers and starfighter pilots, inferno squad fights to save the empire during its most desperate hour. A young and brave imperial officer raised under the tutelage of her father, iden’s superior abilities and gifts make her a natural leader for inferno squad. together aboard the starship corvus, the members of inferno squad crisscross the galaxy, traveling to where their highly-refined skills are most needed. together, they form a task force equally adept at subterfuge and brute force. fearless in the face of sedition, they strike unseen and then fade back into the darkness of deep space. as the story of star wars™ battlefront™ II opens, you'll accompany them on a journey though the empire's final, desperate hour.</p>
+            </div>
+            <div class="CampDiv" id="Iden">
+                <img src="assets/StarWars/Iden_Versio_BF2.png" /img>
+            </div>
+        </section>
+        
+        <section class="SWSec" id="Multi">
+            <h1 class="Underline SWH1" id="MultiTitle">multiplayer</h1>
+            <div id="MultiFlex">
+                <div class="MultiFlexImg"><img src="assets/StarWars/Droid.jpg"  id="Droid" /img></div>
+                <div id="MultiFlexText"><p>star Wars battlefront ii's massive multiplayer gameplay invites you to take control of your favorite characters, pilot extraordinary vehicles, visit beautiful worlds, and grow your skills as you progress as one of four unique classes. Darth Maul. Rey. Boba Fett. Han Solo. These are just a few of the legendary characters waiting to meet you in Star Wars Battlefront ii. take control of unique heroes with ability modifiers and fight battles across the prequels, original trilogy, and the force awakens era. and pilot vehicles from all three eras of star wars. take control of massive att's, sleek starfighters, thundering walkers, and your favorite hero ships. move swiftly and hit hard as an assault. lay down a wall of fire as a heavy. support your allies as an officer, or control the battlefield as a specialist.</p></div>
+                <div class="MultiFlexImg"><img src="assets/StarWars/Clone.jpg" id="Clone" /img></div>
+            </div>
+        </section>
+        
+        <section class="SWSec" id="Customiser">
+            <h1 class="Underline SWH1" id="TShirtTitle">t-shirts</h1>
+            <div id="TShirtImg">
+                <img id="TShirt" /img>
+            </div>
+            <div id="TShirtButtons">
+                <button onclick="Prev()" class="SWButton BuySecButton"id="PrevButton">back</button>
+                <button onclick="Nxt()" class="SWButton BuySecButton"id="NxtButton">next</button>
+            </div>
+            <div id="TShirtBuyButtons">
+                <button onclick="AddSQ()" class="SWButton BuySecButton">s</button>
+                <button onclick="AddMQ()" class="SWButton BuySecButton">m</button>
+                <button onclick="AddLQ()" class="SWButton BuySecButton">l</button>
+            </div>
+        </section>
+        
+        <section class="SWSec" id="SWFinal">
+            <div id="SWMedia">
+                <h1 class="Underline SWH1" id="SWMediaTitle">media</h1>
+				<a href="https://www.facebook.com/EAStarWars">
+                    <img src="assets/Logo/FB.png" class="ContImg" id="SWFB" /img></a>
+				<a href="https://twitter.com/EAStarWars">
+				    <img src="assets/Logo/Twitter.jpg" class="ContImg" /img></a>
+				<a href="https://www.instagram.com/eastarwars/">
+				    <img src="assets/Logo/Insta.jpg" class="ContImg" /img></a>
+				<a href="https://www.youtube.com/EAStarWars">
+				    <img src="assets/Logo/Youtube.png" class="ContImg" /img></a>
+            </div>
+            
+            
+            <div id="SWBuy">
+                <button onclick="AddSWQ()" class="SWButton" id="BuyGame">buy!</button>
+            </div>
+        </section>
+		
+		<footer>
+			
+			<div class="flex-container">
+				
+				<div class="flex-item" id="LogoSec">
+					<h1>EAtm</h1>
+					<img id="EaFootLogo" src="assets/Logo/EA_logo.png">
+					<h1 id="OriTM">Origin tm</h1>
+					<img id="OriFoot" src="assets/Logo/Origin_logo.png">
+				</div>	
+				
+				<div class="flex-item" id="LinkSec">
+					<ul>
+					<li>
+						<a href="AboutUs.html">ABOUT US</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://www.ea.com/legal">LEGAL</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://tos.ea.com/legalapp/WEBPRIVACY/GB/en/PC/">COOKIES & PRIVACY</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://help.ea.com/en/">HELP</a>
+					</li>
+				</ul>
+				<h2>Electronic Arts 2017/18</h2>
+				</div>
+				
+				<div class="flex-item" id="MapSec">
+					<h1>Where's EA?</h1>
+					<div id="map">
+					</div>
+				</div>
+				
+				
+				<div class="flex-item" id="ContactSec">
+					<h1 class="Underline">Contact Us</h1>
+					<a href="https://www.facebook.com/ea.uk/?brand_redir=68678914189">
+						<img src="assets/Logo/FB.png" class="ContImg" /img></a>
+					<a href="https://twitter.com/ea?lang=en">
+						<img src="assets/Logo/Twitter.jpg" class="ContImg" /img></a>
+					<a href="https://www.instagram.com/ea/?hl=en">
+						<img src="assets/Logo/Insta.jpg" class="ContImg" /img></a>
+					<a href="https://www.youtube.com/user/EA">
+						<img src="assets/Logo/Youtube.png" class="ContImg" /img></a>
+				</div>
+			</div>	
+		</footer>	
+	</body>
+    
+    <script>
+      function initMap() {
+          
+        var Head = {lat: 37.5231564, lng: -122.255721};
+          
+        var map =  new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: Head
+        });
+          var marker = new google.maps.Marker({
+          position: Head,
+          map: map
+        });
+      }
+    </script>
+</html>

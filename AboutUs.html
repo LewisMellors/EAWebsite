@@ -1,0 +1,175 @@
+<html>
+    <head>
+        
+        <title>Home</title>
+        <link rel="stylesheet" type="text/css" href="css/css.css">
+            
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.6.1.min.js"></script>
+		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		
+  		<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>	
+        <script type="text/javascript" src="js/js.js"></script>  
+		
+         <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32Ep9_5laqTgzpLhOKjZ0hQEUhWHdyn0&callback=initMap"></script>
+        
+    </head>
+    
+    <body>
+        <header>
+			<a href="Index.html">
+				<img id="logo" src="assets/Logo/EA_logo.png" /img>
+			</a>
+			
+			<nav class="nav">
+				<ul>
+					<li>
+						<a href="Games.html" >GAMES</a>
+						<a href="Media.html" >MEDIA</a>
+						<a href="https://www.ea.com/news" >NEWS</a>
+						<a href="AboutUs.html" >ABOUT US</a>
+					</li>
+				</ul>
+			</nav>
+            
+            <a href="Cart.html">
+                <img src="assets/Cart.jpg" id="Cart" /img>
+            </a>
+		</header>
+			
+        
+        <h1 class="Underline" id="AUH1">About EA</h1>
+        
+        
+        <section class="AUTop">
+            <div id="AULogoDiv">
+                <img class="AULogo" src="assets/Logo/EA_logo.png" /img>
+                <img class="AULogo SmallImg" src="assets/Logo/EA_Sports.png" /img>
+                <img class="AULogo SmallImg" src="assets/Logo/Frostbite.jpg" /img>
+            </div>
+            <div id="AUTextDiv">
+                <p>Electronic Arts Inc. (EA) is an American video game company headquartered in Redwood City, California. Founded and incorporated on May 28, 1982 by Trip Hawkins, the company was a pioneer of the early home computer games industry and was notable for promoting the designers and programmers responsible for its games. As of September 2017, Electronic Arts is the second-largest gaming company in the Americas and Europe by revenue and market capitalization after Activision Blizzard and ahead of Take-Two Interactive. Currently, EA develops and publishes games under several labels including EA Sports titles FIFA, Madden NFL, NHL, NCAA Football, NBA Live, and SSX. Other EA labels produce established franchises such as Battlefield, Need for Speed, The Sims, Medal of Honor, Command and Conquer, as well as newer franchises such as Crysis, Dead Space, Mass Effect, Dragon Age, Army of Two, Titanfall and Star Wars: Knights of the Old Republic, produced in partnership with LucasArts.</p>
+            </div>
+        </section>
+        
+        <section class="AUBottom">
+            <div class="AUMapDiv">
+                <div id="AUMap"></div>
+            </div>
+            <div class="AUStudioDiv">
+                <ul>
+                    <li><a href="https://www.easports.com/">EA Sports</a></li>
+                    <li><a href="http://www.dice.se/">Dice</a></li>
+                    <li><a href="http://www.bioware.com/en/">BioWare</a></li>
+                    <li><a href="http://criteriongames.com/">Criterion Games</a></li>
+                    <li><a href="http://criteriongames.com/">Ghost Games</a></li>
+                    <li><a href="https://www.ea.com/studios/maxis">Maxis</a></li>
+                </ul>
+            </div>
+        </section>
+		
+		<footer>	
+			<div class="flex-container">
+				<div class="flex-item" id="LogoSec">
+					<h1>EAtm</h1>
+					<img id="EaFootLogo" src="assets/Logo/EA_logo.png">
+					<h1 id="OriTM">Origin tm</h1>
+					<img id="OriFoot" src="assets/Logo/Origin_logo.png">
+				</div>	
+				
+				<div class="flex-item" id="LinkSec">
+					<ul>
+					<li>
+						<a href="AboutUs.html">ABOUT US</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://www.ea.com/legal">LEGAL</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="http://tos.ea.com/legalapp/WEBPRIVACY/GB/en/PC/">COOKIES & PRIVACY</a>
+					</li>
+				</ul>
+				<ul>
+					<li>
+						<a href="https://help.ea.com/en/">HELP</a>
+					</li>
+				</ul>
+				<h2>Electronic Arts 2017/18</h2>
+				</div>
+				
+				<div class="flex-item" id="MapSec">
+					<h1>Where's EA?</h1>
+					<div id="map">
+					</div>
+				</div>
+				
+				
+				<div class="flex-item" id="ContactSec">
+					<h1 class="Underline">Contact Us</h1>
+					<a href="https://www.facebook.com/ea.uk/?brand_redir=68678914189">
+						<img src="assets/Logo/FB.png" class="ContImg" /img></a>
+					<a href="https://twitter.com/ea?lang=en">
+						<img src="assets/Logo/Twitter.jpg" class="ContImg" /img></a>
+					<a href="https://www.instagram.com/ea/?hl=en">
+						<img src="assets/Logo/Insta.jpg" class="ContImg" /img></a>
+					<a href="https://www.youtube.com/user/EA">
+						<img src="assets/Logo/Youtube.png" class="ContImg" /img></a>
+				</div>
+				
+			</div>	
+		</footer>		
+    </body>  
+    
+    <script>
+      function initMap() {
+          
+        var Head = {lat: 37.5231564, lng: -122.255721};
+        var Dice = {lat: 59.313350, lng: 18.069349};
+        var BioWare = {lat: 30.459443, lng: -97.751287};
+        var Criterion = {lat: 51.237928, lng: -0.577265};
+        var Ghost = {lat: 57.708676, lng: 11.963146};
+          
+        var map2 = new google.maps.Map(document.getElementById('AUMap'), {
+          zoom: 1,
+          center: Head
+        });
+        var marker1 = new google.maps.Marker({
+          position: Head,
+          map: map2
+        });
+        var marker2 = new google.maps.Marker({
+          position: Dice,
+          map: map2
+        });
+        var marker3 = new google.maps.Marker({
+          position: BioWare,
+          map: map2
+        });
+        var marker4 = new google.maps.Marker({
+          position: Criterion,
+          map: map2
+        });
+        var marker5 = new google.maps.Marker({
+          position: Ghost,
+          map: map2
+        });
+          
+        var map =  new google.maps.Map(document.getElementById('map'), {
+          zoom: 7,
+          center: Head
+        });
+          var marker = new google.maps.Marker({
+          position: Head,
+          map: map
+        });
+      }
+    </script>
+    
+</html>
